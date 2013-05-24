@@ -48,7 +48,7 @@ class editorial_rotation {
 		foreach ($users as $user){
 			echo '<li>';
 				$user_state = $editorial_uc->get_current_user_role($user->ID);
-				echo $user->display_name . ' - ' . $user->user_nicename . ' - ' . $user->user_login . ' - ' . $user_state;
+				echo $user->display_name . ' - ' . $user->user_nicename . ' - ' . $user->user_login . ' - ' . $user_state . ' - ' . $user->user_email;
 			echo '</li>';
 		}
 		echo '</ul>';
