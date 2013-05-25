@@ -52,6 +52,10 @@ class editorial_rotation {
 			echo '</li>';
 		}
 		echo '</ul>';
+		?>
+			<br />
+					<input type="submit" name="submit" class="button-primary" value="<?php _e( "Save Changes", 'pf' ) ?>" />		
+		<?php
 	
 	}
 	
