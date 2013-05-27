@@ -59,6 +59,23 @@ class editorial_rotation {
 	
 	}
 	
+	function activate_guest_editor(){
+		//http://codex.wordpress.org/Function_Reference/add_role
+		$capabilities = array(
+			'delete_private_posts' => true,
+			'delete_published_posts' => true,
+			'edit_others_posts' => true,
+			'edit_posts' => true,
+			'edit_private_posts' => true,
+			'edit_published_posts' => true,
+			'publish_posts' => true,
+			'upload_files' => true,
+			'moderate_comments' => true
+			);
+		add_role( 'guest_editor','Guest Editor', $capabilities );
+		
+	}
+	
 }
 
 class editorial_user_control {
